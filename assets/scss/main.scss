@@ -24,14 +24,29 @@ margin: 20px;
        // background-color: aqua;
         width: 200px;
 
+
+        h2{
+text-shadow: 15px 10px 2px white;     
+background-color: rgba(255, 255, 255, 0.076);
+filter: blur(.7px);
+
+   }
+
     }
 
     article:nth-of-type(2){
        // background-color: yellowgreen;
+       z-index: -1;
+       height: 200px;
+       background-color: red;
 
         img{
             max-width: 200px;
+            height: 100%;
             border-radius: 50%;
+            margin-left: -50px;
+            box-shadow: inset 5px 5px 5px orange  ;
+            
         }
     }
 }
