@@ -81,7 +81,7 @@ fetch("https://picsum.photos/v2/list")
             // h2 erstellen für den author
             const contactElementAuthor_h2 = document.createElement("h2");
             // mit inhalt füllen   bzw. innerHTML 
-            contactElementAuthor_h2.inertHTML = `Autor: ${author}`;
+            contactElementAuthor_h2.innerHTML = `Autor: ${author}`;
 
 
 
@@ -90,7 +90,7 @@ fetch("https://picsum.photos/v2/list")
 
             // mit inhalt füllen   bzw. innerHTML 
             // img Attribute   scr ??? fetchen ???
-            contactElementUrl_img.scr = `${download_url}`;
+            contactElementUrl_img.src = `${download_url}`;
             // img Attribute alt    hinzufügen
             contactElementUrl_img.alt = `Listen Nummer ${id} vom Author ${author}`;
 
@@ -112,15 +112,16 @@ fetch("https://picsum.photos/v2/list")
 
 
 
-            //  jetzt   ausgabe und sichtbar machen im body  als Kind vom body
-            document.body.appendChild(contactElement_section);
-
+ //  jetzt   ausgabe und sichtbar machen im body  als Kind vom body
+        // !!! wichtig       !!!
+        document.body.appendChild(contactElement_section);
 
 
             // !!! Ende forEach
         })
 
 
+       
 
 
 
